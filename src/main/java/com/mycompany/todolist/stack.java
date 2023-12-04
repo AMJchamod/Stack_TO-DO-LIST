@@ -26,14 +26,14 @@ public class stack {
      }
      }
          
-      int pop(){
+      public String  pop(){
            if(top<0){
                System.out.println("System underflow");
-                return 0;
+                return " no";
                
            }else{
-                int x = array[--top];
-                 return x;
+                String x = array[--top];
+                 return "Task complete succusful"+ x;
            }
          
      }

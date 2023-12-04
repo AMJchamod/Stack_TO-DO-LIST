@@ -11,25 +11,43 @@ import java. util.Scanner;
 public class Todolist {
 
     public static void main(String[] args) {
-        menu m =new menu();
-        m.menu1();
-        Scanner in = new Scanner (System.in);
-         int answer=in.nextInt();
-         switch(answer){
-        
-                 case 1:
-                     stack s = new stack();
-                     System.out.println("ADD YOUR TASKS HERE");
-                     while(in.hasNext()){
-                     String x = in.nextLine();
-                     if(x.equals("exit")){
-                         m.menu1();
-                     }
-                     s.push(x);
-                     }
-    }
+         Scanner in = new Scanner(System.in);
+         menu m = new menu();
+         boolean done = false;
+         String complete ;
+         m.menu1();
+         
+          stack s = new stack();
+         System.out.println("enter your choisce");
+         String answer = in.nextLine(); // fix this
+      
+          if("1".equals(answer)){
+              
+              
+                
+                      while(in.hasNext()){
+                            System.out.println("enter your works");
+                            String d = in.nextLine();
+                            if ("done".equals(d) ){
+                                
+                                  break;
+                           }else{
+                                  s.push(d);
+                                 }
+                        }
+               
+                
+          }else if("2".equals(answer)) {
+             s.pop();
+             String g =s.pop();
+             System.out.println(g);
+             
+            
+        }
          
          
-        
+       
     }
-}
+    }
+    
+       

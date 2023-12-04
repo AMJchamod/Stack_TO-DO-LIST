@@ -4,7 +4,6 @@
  */
 package com.mycompany.todolist;
 
-import java.util.Scanner;
 
 /**
  *
@@ -17,7 +16,6 @@ public class menu {
         System.out.println(" TO -DO APLLICATION");
         System.out.println("HINT: important things insert lastly");
         System.out.println("===============================================================");
-        Scanner in = new Scanner(System.in);
         System.out.println("*********MENU*********");
         System.out.println("1.ADD TASK");
         System.out.println("2.Complet task");
@@ -26,5 +24,9 @@ public class menu {
         System.out.println("5.Watch all tasks");
         System.out.println("************************");
     }
-    
 }
+
+
+
+    
+
